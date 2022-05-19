@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Budget calculation</title>
+</head>
+<body>
+    <div class="container">
+        <div id="formContainer">
+            <form id="budgetForm">   
+                <p><b>Please use whole numbers for this form</b></p><br>
+                <label  for="calendar" class="instruction"><b>Please select the date:</b></label>
+                <input type="date" name="date" id="date" placeholder="dd-mm-yyyy" value=""
+                min="1997-01-01" max="2030-12-31" required><br>
+                <p><b>Monthly outgoing costs</b></p>
+                <label  for="name" class="instruction">Please enter the following:</b></label></br>
+                <input type="number" name="housing" id="housing" placeholder="Rent/Mortgage" style="width: 285px;"></br>
+                <input type="number" name="councilTax" id="councilTax" placeholder="Council tax" style="width: 285px;"></br>
+                <input type="number" name="serviceCharges" id="serviceCharges" placeholder="Service charges" style="width: 285px;"></br>
+                <input type="number" name="fuelBill" id="fuelBill" placeholder="Gas and electricity bill" style="width: 285px;"></br>
+                <input type="number" name="waterBill" id="waterBill" placeholder="Water charges" style="width: 285px;"></br>
+                <input type="number" name="TVLicense" id="TVLicense" placeholder="TV license" style="width: 285px;"></br>
+                <input type="number" name="phoneBill" id="phoneBill" placeholder="Phone & broadband charges" style="width: 285px;"></br>
+                <input type="number" name="insuranceFee" id="insuranceFee" placeholder="Insurance Fees" style="width: 285px;"></br>
+                <input type="number" name="groceries" id="groceries" placeholder="Groceries" style="width: 285px;"></br>
+                <input type="number" name="clothing" id="clothing" placeholder="Clothing" style="width: 285px;"></br>
+                <input type="number" name="petrolPrice" id="petrolPrice" placeholder="Petrol/travel costs" style="width: 285px;"></br>
+                <input type="number" name="otherFee" id="otherFee" placeholder="Miscellaneous" style="width: 285px;"></br>
+                </br>
+                <p><b>Net income of your household</b></p>
+                <input type="number" name="salary" id="salary" placeholder="Your monthly take-home pay" style="width: 285px;"></br>
+                <input type="number" name="earnedProfits" id="earnedProfits" placeholder="Self-employed profits" style="width: 285px;"></br>
+                <input type="number" name="investments" id="investments" placeholder="Investments/interests" style="width: 285px;"></br>
+                <input type="number" name="pension" id="pension" placeholder="Pensions" style="width: 285px;"></br>
+                <input type="number" name="benefits" id="benefits" placeholder="State benefits" style="width: 285px;"></br>
+                <input type="number" name="otherIncome" id="otherIncome" placeholder="Other income" style="width: 285px;"></br>
+                </br>
+                <input type="submit"   id="submit" value="Submit">
+                </br></br>
+                <table>
+                <tr>
+                <th id="savingHeader">Excess:</th>
+                <th id="pound">£</th>
+                <th id="saving"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th id="deficitHeader">Shortfall:</th>
+                <th id="pound">£</th>
+                <th id="deficit"></th>
+                </tr>
+                </table>
+            </form>    
+        </div> 
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script></script> 
+  
+</body>
+</html>

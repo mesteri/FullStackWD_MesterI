@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(200, 220, 240) ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 5px;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formContainer{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for 1546px < */
+@media only screen and (max-width: 1546px){
+    .container{
+        font-size: 46px;
+    }
+}
+
+/* Media query for 1380px < */
+@media only screen and (max-width: 1380px){
+    .container{
+        font-size: 42px;
+    }
+}
+
+/* Media query for 1050px < */
+@media only screen and (max-width: 1050px){
+    .container{
+        font-size: 36px;
+}
+}
+/* Media query for 920px < */
+@media only screen and (max-width: 920px){
+    .container{
+        font-size: 30px;
+   	}
+}
+
+/* Media query for 774px < */
+@media only screen and (max-width: 774px){
+    .container{
+        font-size: 24px;
+    }
+
+}
+
+/* Media query for 600px < */
+@media only screen and (max-width: 600px){
+    .container{
+        font-size: 18px;
+      }
+}
+
+/* Media query for 475px < */
+@media only screen and (max-width: 475px){
+    .container{
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        height: 80%;
+    }
+    #formContainer{
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        height: 80%;
+    }
+}
